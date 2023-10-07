@@ -25,15 +25,15 @@ const graphik = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL('https://lebroncode.com'),
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: 'Alex LeBron',
+    template: '%s | Alex LeBron',
   },
-  description: 'Developer, writer, and creator.',
+  description: 'Pasionate, Driven, Dedicated.',
   openGraph: {
-    title: 'Lee Robinson',
+    title: 'Alex LeBron',
     description: 'Developer, writer, and creator.',
     url: 'https://lebroncode.com',
-    siteName: 'Lee Robinson',
+    siteName: 'Alex LeBron',
     locale: 'en_US',
     type: 'website',
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Lee Robinson',
+    title: 'Alex LeBron',
     card: 'summary_large_image',
   },
   verification: {
