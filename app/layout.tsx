@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   description: 'Pasionate, Driven, Dedicated.',
   openGraph: {
     title: 'Alex LeBron',
-    description: 'Developer, writer, and creator.',
+    description: 'Passionate, Driven, Dedicated.',
     url: 'https://lebroncode.com',
     siteName: 'Alex LeBron',
     locale: 'en_US',
