@@ -76,7 +76,7 @@ export default async function Page() {
   return (
     <section>
       <h1 className="font-bold text-2xl mb-8 tracking-tighter">
-        Hey, Alex Lebron here 👋
+        Alex LeBron - Software Engineer - Innovator
       </h1>
 
       <div className="prose prose-neutral dark:prose-invert">
@@ -86,7 +86,7 @@ export default async function Page() {
       </div>
 
       <p className="prose prose-neutral dark:prose-invert">
-        {`I am a software engineer with a passion for building great products. I currently
+        {`I am a software engineer with an entrepreneurial mindset and a passion for building great products. I currently
         work as an engineer at `}
         <span className="not-prose">
           <Badge href="https://shop-ware.com">
@@ -94,14 +94,14 @@ export default async function Page() {
             <span style={{ marginLeft: 4 }}>Shop-Ware</span>
           </Badge>
         </span>
-        {`. My other interests include high performance vehicles, boxing and crypto.`}
+        {`. My other interests include español, boxing and crypto.`}
       </p>
 
       <div className="prose prose-neutral dark:prose-invert">
-        <p>I am on an engineering pursuit of excellence. I try to spend time everyday working toward this goal. To be a better thinker, 
+        <p>My goals are to be a better thinker, 
           solve harder problems, build better products, FASTER. To build a great product efficiently, you have to hone your 
           enginnering skills and critical thinking. One must think of the big picture, your customer needs, weigh the benefits of every action
-          you take against meeting your desired goals.
+          you take against meeting the desired goals of the business.
         </p>
       </div>
 
@@ -172,9 +172,7 @@ export default async function Page() {
         <p>
         "Hold fast to dreams, For if dreams die, Life is a broken-winged bird, That cannot fly." <br />- <em>Langston Hughes</em>
         </p>
-        <p>
-        "Success is not final, failure is not fatal: It is the courage to continue that counts.” <br />- <em>Winston S. Churchill</em>
-        </p>
+        <p>"There are only two hard problems in Computer Science: cache invalidation and naming things." <br />- <em>Phil Karlton</em></p>
         <p>
         "For hopes sake, never give up on hope, for the miracle of a new day is always just around the corner." <br />- <em>Unknown</em>
         </p>
