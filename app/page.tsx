@@ -1,14 +1,14 @@
-import Image from 'next/image';
-import family from 'public/images/home/family.jpg';
-import hvar from 'public/images/home/hvar.jpeg';
-import picasso from 'public/images/home/picasso.jpeg';
-import standing_horiz from 'public/images/home/standing_horiz.jpg';
-import bitcoin_source from 'public/images/home/bitcoin_source.png';
-import water from 'public/images/home/water.jpg';
-import avatar from 'app/avatar.jpg';
-import youtube from 'public/images/home/youtube.svg';
-import github from 'public/images/home/github.svg';
-import shopware from 'public/images/home/shopware.svg';
+import Image from "next/image";
+import family from "public/images/home/family.jpg";
+import hvar from "public/images/home/hvar.jpeg";
+import picasso from "public/images/home/picasso.jpeg";
+import standing_horiz from "public/images/home/standing_horiz.jpg";
+import bitcoin_source from "public/images/home/bitcoin_source.png";
+import water from "public/images/home/water.jpg";
+import avatar from "app/avatar.jpg";
+import youtube from "public/images/home/youtube.svg";
+import github from "public/images/home/github.svg";
+import shopware from "public/images/home/shopware.svg";
 
 function Badge(props) {
   return (
@@ -76,13 +76,11 @@ export default async function Page() {
   return (
     <section>
       <h1 className="font-bold text-2xl mb-8 tracking-tighter">
-        Alex LeBron - Software Engineer - Innovator
+        Alex LeBron - Software Engineer
       </h1>
 
       <div className="prose prose-neutral dark:prose-invert">
-        <p>
-        Passionate, Dedicated, Driven.
-        </p>
+        <p>Passionate, Dedicated, Driven.</p>
       </div>
 
       <p className="prose prose-neutral dark:prose-invert">
@@ -98,10 +96,12 @@ export default async function Page() {
       </p>
 
       <div className="prose prose-neutral dark:prose-invert">
-        <p>My goals are to be a better thinker, 
-          solve harder problems, build better products, FASTER. To build a great product efficiently, you have to hone your 
-          enginnering skills and critical thinking. One must think of the big picture, your customer needs, weigh the benefits of every action
-          you take against meeting the desired goals of the business.
+        <p>
+          My goals are to be a better thinker, solve harder problems and build
+          better products. To build a great product efficiently, you have to
+          hone your enginnering skills and critical thinking. One must think of
+          the big picture, your customer needs, weigh the benefits of every
+          action you take against meeting the desired goals of the business.
         </p>
       </div>
 
@@ -170,21 +170,19 @@ export default async function Page() {
       <div className="prose prose-neutral dark:prose-invert">
         <h2>Poetry</h2>
         <p>
-        "Hold fast to dreams, For if dreams die, Life is a broken-winged bird, That cannot fly." <br />- <em>Langston Hughes</em>
+          "Hold fast to dreams, For if dreams die, Life is a broken-winged bird,
+          That cannot fly." <br />- <em>Langston Hughes</em>
         </p>
-        <p>"There are only two hard problems in Computer Science: cache invalidation and naming things." <br />- <em>Phil Karlton</em></p>
         <p>
-        "For hopes sake, never give up on hope, for the miracle of a new day is always just around the corner." <br />- <em>Unknown</em>
+          "There are only two hard problems in Computer Science: cache
+          invalidation and naming things." <br />- <em>Phil Karlton</em>
+        </p>
+        <p>
+          "For hopes sake, never give up on hope, for the miracle of a new day
+          is always just around the corner." <br />- <em>Unknown</em>
         </p>
       </div>
       <div className="my-8 flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 w-full">
-        <ChannelLink
-          img={avatar}
-          name="@lebroncode"
-          type="YouTube"
-          link="https://www.youtube.com/@lebroncode"
-          svg={youtube}
-        />
         <ChannelLink
           img={avatar}
           name="@Alebron23"
