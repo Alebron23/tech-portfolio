@@ -1,5 +1,5 @@
 import Image from "next/image";
-import family from "public/images/home/family.jpg";
+import portrait from "public/images/home/portrait.jpg";
 import hvar from "public/images/home/hvar.jpeg";
 import picasso from "public/images/home/picasso.jpeg";
 import standing_horiz from "public/images/home/standing_horiz.jpg";
@@ -100,16 +100,16 @@ export default async function Page() {
           My goals are to be a better thinker, solve harder problems and build
           better products. To build a great product efficiently, you have to
           hone your enginnering skills and critical thinking. One must think of
-          the big picture, your customer needs, weigh the benefits of every
-          action you take against meeting the desired goals of the business.
+          the big picture, your customer needs, weigh the benefits of your
+          actions against meeting the desired goals of the business.
         </p>
       </div>
 
       <div className="columns-2 sm:columns-3 gap-4 my-8">
         <div className="relative h-40 mb-4">
           <Image
-            alt="Family photo"
-            src={family}
+            alt="Self Portrait"
+            src={portrait}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
