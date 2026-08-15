@@ -2,6 +2,8 @@
 
 # lebroncode.com
 
+This site was started from a vercel template: https://vercel.com/templates
+
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Database**: [PlanetScale](https://planetscale.com)
 - **Authentication**: [NextAuth.js](https://next-auth.js.org)
