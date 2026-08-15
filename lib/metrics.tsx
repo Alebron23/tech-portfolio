@@ -17,39 +17,41 @@ const youtube = google.youtube({
   auth: googleAuth,
 });
 
-export const getBlogViews = cache(async () => {
-  if (!process.env.DATABASE_URL) {
-    return 0;
-  }
+// export const getBlogViews = cache(async () => {
+//   if (!process.env.DATABASE_URL) {
+//     return 0;
+//   }
 
-  const data = await queryBuilder
-    .selectFrom('views')
-    .select(['count'])
-    .execute();
+//   const data = await queryBuilder
+//     .selectFrom('views')
+//     .select(['count'])
+//     .execute();
 
-  return data.reduce((acc, curr) => acc + Number(curr.count), 0);
+//   return data.reduce((acc, curr) => acc + Number(curr.count), 0);
+// });
+
+export const getViewsCount = cache(() => {
+  return [{ slug: 'x', count: 10000 }] // queryBuilder.selectFrom('views').select(['slug', 'count']).execute();
 });
 
-export const getViewsCount = cache(async () => {
-  return queryBuilder.selectFrom('views').select(['slug', 'count']).execute();
+export const getLeeYouTubeSubs = cache(() => {
+  // const response = await youtube.channels.list({
+  //   id: ['UCZMli3czZnd1uoc1ShTouQw'],
+  //   part: ['statistics'],
+  // });
+  // console.log('RESPONSE', response);
+  // let channel = response.data.items![0];
+  // Number(channel?.statistics?.subscriberCount);
+  return 1000000;
 });
 
-export const getLeeYouTubeSubs = cache(async () => {
-  const response = await youtube.channels.list({
-    id: ['UCZMli3czZnd1uoc1ShTouQw'],
-    part: ['statistics'],
-  });
+export const getVercelYouTubeSubs = cache(() => {
+  // const response = await youtube.channels.list({
+  //   id: ['UCLq8gNoee7oXM7MvTdjyQvA'],
+  //   part: ['statistics'],
+  // });
 
-  let channel = response.data.items![0];
-  return Number(channel?.statistics?.subscriberCount);
-});
-
-export const getVercelYouTubeSubs = cache(async () => {
-  const response = await youtube.channels.list({
-    id: ['UCLq8gNoee7oXM7MvTdjyQvA'],
-    part: ['statistics'],
-  });
-
-  let channel = response.data.items![0];
-  return Number(channel?.statistics?.subscriberCount);
+  // let channel = response.data.items![0];
+  // return Number(channel?.statistics?.subscriberCount);
+  return 100
 });

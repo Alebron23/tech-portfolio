@@ -16,15 +16,12 @@ This site was started from a vercel template: https://vercel.com/templates
 This application requires Node.js v16.13+.
 
 ```bash
-git clone https://github.com/leerob/leerob.io.git
-cd leerob.io
+git clone https://github.com/Alebron23/tech-portfolio.git
+cd tech-portfolio
 pnpm install
 pnpm run setup # Remove all of my personal information
 pnpm dev
 ```
 
-Create a `.env` file similar to [`.env.example`](https://github.com/leerob/leerob.io/blob/main/.env.example).
+Create a `.env` file similar to [`.env.example`](https://github.com/Alebron23/tech-portfolio/blob/main/.env.example).
 
-## Cloning / Forking
-
-Please review the [license](https://github.com/leerob/leerob.io/blob/main/LICENSE.txt) and remove all of my personal information (resume, blog posts, images, etc.) by running `pnpm run setup`.
